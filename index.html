@@ -276,7 +276,7 @@
       }, textInTimer);
     }
 
-    window.onload = animateText;
+
 
     async function pilihwarna() {
       var { isConfirmed: warna } = await swals.fire({
@@ -297,9 +297,11 @@
         if (warna2) {
           await swals.fire('Oke!', `Sekarang lihat ini ya bebeb &#10084;&#65039;`);
           expl();
+          animateText();
         } else {
           await swals.fire('Oke, yg Merah yaa!', 'Sama aja sih sebenernya &#128513, cuman kalo Merah sayangnya lebih banyakk &#128522;');
           expl();
+          animateText();
         }
         //Selingan
       } else {
@@ -313,9 +315,11 @@
         if (warna2) {
           await swals.fire('Oke, yg Biru yaa!', 'Sama aja sih sebenernya &#128513, cuman kalo Merah sayangnya lebih banyakk &#128522;');
           expl();
+          animateText();
         } else {
           await swals.fire('Oke!', `Sekarang lihat ini ya bebeb &#10084;&#65039;`);
           expl();
+          animateText();
         }
       }
     }
